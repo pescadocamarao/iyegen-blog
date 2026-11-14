@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Create a Yealico Rule in One Minute with iYegen — Tutorial</title>
+<meta name="description" content="Step-by-step tutorial: create a Yealico site rule automatically with iYegen. Paste a URL, tap the magic wand, follow the guided chain (index, detail, video or gallery) and import the generated rule JSON into Yealico.">
+<meta name="keywords" content="Yealico site rule, create Yealico rule, how to make a Yealico rule, site rule JSON generator, iYegen tutorial">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
+<link rel="apple-touch-icon" href="../icon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="iYegen Blog">
+<meta property="og:title" content="How to Create a Yealico Rule in One Minute with iYegen">
+<meta property="og:description" content="Paste the URL, tap the wand, follow the guided chain — and import the finished rule JSON into Yealico.">
+<meta property="og:url" content="https://pescadocamarao.github.io/iyegen-blog/posts/create-yealico-rule-in-one-minute.html">
+<meta property="og:image" content="https://pescadocamarao.github.io/iyegen-blog/icon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Create a Yealico Rule in One Minute — iYegen Tutorial">
+<meta name="twitter:description" content="The automatic flow: URL → wand → guided chain → JSON → Yealico.">
+<meta name="twitter:image" content="https://pescadocamarao.github.io/iyegen-blog/icon.svg">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <img src="../icon.svg" alt="iYegen app icon">
+    <div class="brand">i<span>Yegen</span> Blog</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#posts">Posts</a>
+    </nav>
+  </header>
+
+  <article class="post">
+    <div class="meta">Tutorial</div>
+    <h1>How to create a Yealico rule in one minute with iYegen</h1>
+
+    <p>No selectors. No regex. No JSON editor. Here is the complete automatic flow, exactly as you will use it in the app.</p>
+
+    <h2>Step 1 — Paste the site's URL</h2>
+    <p>Open iYegen and paste the address of the site's list page — the page that shows the covers/titles you browse. Tap the magic wand button 🪄.</p>
+    <p>Behind the scenes, an invisible browser loads the page with JavaScript enabled, waits for it to settle, and captures the real, post-JavaScript page — the same page Yealico would work with.</p>
+
+    <h2>Step 2 — Confirm the index</h2>
+    <p>iYegen finds the repeating items on the page (the cards), and pulls the title, cover and link from each one. Categories are detected and applied automatically, and pagination is figured out by comparing pages — not by guessing.</p>
+
+    <h2>Step 3 — Follow the guided chain</h2>
+    <p>Now tap an item to open its detail page. The app captures it and asks one simple question:</p>
+    <div class="callout">
+      <p><strong>What does this page contain?</strong><br>🎬 Video · 🖼 Gallery · ➡️ Neither — keep going</p>
+    </div>
+    <p>The app suggests the answer based on what it measured (a video player found? a photo grid?) — you just confirm, or tap through to the next layer and it asks again. Pages are archived in order: 1st = list, 2nd = detail, 3rd = video/gallery page.</p>
+
+    <h2>Step 4 — Get the JSON</h2>
+    <p>That's it. iYegen assembles the complete site rule: index, search, categories, tags when the site has them, detail, video or gallery, and pagination — a single JSON, built from proven structures, ready to use. The description of the detail even carries the video link, the way experienced rule authors do it.</p>
+
+    <h2>Step 5 — Import into Yealico</h2>
+    <ol>
+      <li>Copy the JSON from iYegen (or share/export it).</li>
+      <li>Open Yealico and import the rule from the clipboard/file.</li>
+      <li>Open the site inside Yealico — list, detail and video/gallery are all wired.</li>
+    </ol>
+
+    <p>One minute, start to finish — most of it spent watching the wand work. Advanced users can still open the hood: every automatic choice can be reviewed and adjusted by hand in the Advanced sections. But for most sites, most of the time, you will never need to.</p>
+
+    <a class="back" href="../index.html">← Back to the blog</a>
+  </article>
+
+  <footer>
+    <p>iYegen is an independent project, built by a Yealico user, for Yealico users. Yealico is a trademark of its respective owner; this blog is not affiliated with the Yealico team.</p>
+    <p style="margin-top:10px">Code &amp; releases on GitHub: <a href="https://github.com/pescadocamarao">github.com/pescadocamarao</a> · <a href="https://github.com/pescadocamarao/iyegen-ota">iYegen OTA</a> · <a href="https://github.com/pescadocamarao/iyegen-blog">this blog</a></p>
+  </footer>
+
+</div>
+</body>
+</html>

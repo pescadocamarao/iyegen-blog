@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Writing Rule JSON by Hand — iYegen Blog</title>
+<meta name="description" content="Creating a Yealico site rule used to mean hand-writing CSS selectors, regex and pagination by hand. iYegen, the site rule JSON generator, changes that: paste a URL and become a rule creator.">
+<meta name="keywords" content="Yealico site rule, create Yealico rule, site rule JSON generator, iYegen, Yealico rule JSON">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
+<link rel="apple-touch-icon" href="../icon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="iYegen Blog">
+<meta property="og:title" content="Stop Writing Rule JSON by Hand">
+<meta property="og:description" content="Hand-written selectors and regex kept Yealico rule creation in the hands of a few. iYegen opens it to everyone.">
+<meta property="og:url" content="https://pescadocamarao.github.io/iyegen-blog/posts/stop-writing-rule-json-by-hand.html">
+<meta property="og:image" content="https://pescadocamarao.github.io/iyegen-blog/icon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stop Writing Rule JSON by Hand — iYegen">
+<meta name="twitter:description" content="The manifesto: why Yealico rule creation should not require writing JSON by hand.">
+<meta name="twitter:image" content="https://pescadocamarao.github.io/iyegen-blog/icon.svg">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <img src="../icon.svg" alt="iYegen app icon">
+    <div class="brand">i<span>Yegen</span> Blog</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#posts">Posts</a>
+    </nav>
+  </header>
+
+  <article class="post">
+    <div class="meta">Manifesto</div>
+    <h1>Stop writing rule JSON by hand</h1>
+
+    <p>Yealico is a wonderful reader. Hundreds of thousands of people use it to read and watch the open web their own way. But almost everything inside it depends on a tiny group of people: the ones who know how to write a <strong>site rule</strong>.</p>
+
+    <p>And writing a site rule by hand is… a craft. A painful one.</p>
+
+    <h2>The old way</h2>
+    <p>To create a Yealico rule today, you open the site's HTML and start hunting. You pick CSS selectors for the list items. You write a regex to extract the video URL from the page body — and pray the replacement string is exactly right. You compare page 1 and page 2 to reverse-engineer the pagination format. You repeat everything for the detail page, the gallery, the search page, the tags. One misplaced key, one field built from memory instead of from a proven shape, and the app crashes on import.</p>
+
+    <p>Most users never even try. They wait for someone else to publish a rule — and if nobody does, that site simply doesn't exist for them.</p>
+
+    <h2>The shift</h2>
+    <p>iYegen exists to flip that equation. Instead of you adapting to the JSON, the app goes to the site:</p>
+    <ul>
+      <li>It loads the page in a real, JavaScript-capable browser — the same way Yealico will see it.</li>
+      <li>It measures the page: where the items are, where the video hides, how pagination changes from page to page.</li>
+      <li>It asks you the one question that matters — <em>"is the video on this page?"</em> — and follows your answer down the chain.</li>
+      <li>It hands you a complete, ready-to-import rule JSON.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>The point:</strong> every Yealico user already knows which sites they want. The only thing missing was a tool that speaks JSON fluently so they don't have to.</p>
+    </div>
+
+    <h2>Consumers become creators</h2>
+    <p>When creating a rule takes one minute instead of one evening, the ecosystem changes. More people create rules. More rules get shared. More sites work in the reader — for everyone. iYegen doesn't compete with Yealico or any other reader: it is the factory that feeds them.</p>
+
+    <p>Stop writing rule JSON by hand. Paste the URL. Tap the wand. Create.</p>
+
+    <a class="back" href="../index.html">← Back to the blog</a>
+  </article>
+
+  <footer>
+    <p>iYegen is an independent project, built by a Yealico user, for Yealico users. Yealico is a trademark of its respective owner; this blog is not affiliated with the Yealico team.</p>
+    <p style="margin-top:10px">Code &amp; releases on GitHub: <a href="https://github.com/pescadocamarao">github.com/pescadocamarao</a> · <a href="https://github.com/pescadocamarao/iyegen-ota">iYegen OTA</a> · <a href="https://github.com/pescadocamarao/iyegen-blog">this blog</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
